@@ -45,5 +45,5 @@ numpy>=1.26.0
 tqdm>=4.66.0                      # Progress bars
 requests>=2.32.0
 
-torchvision>=2.2.0
+torchvision<=0.27.1
 browser-cookie3>=0.16.0                 # Extract cookies from browser for YouTube downloads
