@@ -12,15 +12,16 @@ def download_youtube_audio(url:str)-> str:
         'outtmpl': output_path,
         'cookiefile': 'cookies.txt',
         # 'cookiesfrombrowser': ('edge',), 
+        'proxy':'http://qooavylb:f3iv6wfouho4@31.59.20.176:6754',
         'extractor_args':{
             'youtube':{
-                'player_client':['default','-android_sdkless']
+                'player_client':['ios','tv']
             }
         },
         'http_headers':{
             'User-Agent':'Mozilla/5.0(Windows NT 10.0; Win64; x64) AppleWebkit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept':'text/html, application/xhtml+xml, application/xml; q=0.9, */*; q-0.8',
-            'Accept-Language': 'en-us, en;q=0.5'
+            # 'Accept':'text/html, application/xhtml+xml, application/xml; q=0.9, */*; q-0.8',
+            # 'Accept-Language': 'en-us, en;q=0.5'
         },
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
